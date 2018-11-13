@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="@vue/cli" @patch="fun" />
     <hr>
+    <hr>
+    <Vuexx></Vuexx>
+    <hr>
+    <br>
     <br>
     <router-link to="/pagea">Go to pagea</router-link>
     <br>
@@ -15,12 +18,14 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Vuexx from './components/vuex.vue'
 import './components/custom.js'  // 引入自定义指令文件
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Vuexx
   },
   methods: {
     fun ($event) {
