@@ -3,8 +3,11 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+let defaultCity = '北京'
+
 const state = {
-    count: 1
+    count: 1,
+    city: defaultCity
 }
 
 const mutations = {

@@ -1,0 +1,130 @@
+{
+  "ret": true,
+  "data": [
+    {
+      "id": "0001",
+      "spot": {
+        "sightName": "大连圣亚海洋世界(AAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+        "categoryList": [{
+            "title": "成人票",
+            "children": [{
+              "title": "成人三馆联票",
+              "children": [{
+                "title": "成人三馆联票 - 某一连锁店销售"
+              }]
+            },{
+              "title": "成人五馆联票"
+            }]
+          }, {
+            "title": "学生票"
+          }, {
+            "title": "儿童票"
+          }, {
+            "title": "特惠票"
+          }]
+      }
+    },
+    {
+      "id": "0002",
+      "spot": {
+        "sightName": "大连老虎滩公园(AAAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+        "categoryList": [{
+            "title": "老虎滩成人票",
+            "children": [{
+              "title": "老虎滩成人三馆联票",
+              "children": [{
+                "title": "老虎滩成人三馆联票 - 某一连锁店销售"
+              }]
+            },{
+              "title": "老虎滩成人五馆联票"
+            }]
+          }, {
+            "title": "老虎滩学生票"
+          }, {
+            "title": "老虎滩儿童票"
+          }, {
+            "title": "老虎滩特惠票"
+          }]
+      }
+    },
+    {
+      "id": "0003",
+      "spot": {
+        "sightName": "星海公园(AAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+        "categoryList": [{
+            "title": "星海公园成人票",
+            "children": [{
+              "title": "成人三馆联票",
+              "children": [{
+                "title": "成人三馆联票 - 某一连锁店销售"
+              }]
+            },{
+              "title": "成人五馆联票"
+            }]
+          }, {
+            "title": "星海公园学生票"
+          }, {
+            "title": "星海公园儿童票"
+          }, {
+            "title": "星海公园特惠票"
+          }]
+      }
+    },
+    {
+      "id": "0004",
+      "spot": {
+        "sightName": "发现王国(AAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+        "categoryList": [{
+            "title": "发现王国成人票",
+            "children": [{
+              "title": "成人三馆联票",
+              "children": [{
+                "title": "成人三馆联票 - 某一连锁店销售"
+              }]
+            },{
+              "title": "成人五馆联票"
+            }]
+          }, {
+            "title": "发现王国学生票"
+          }, {
+            "title": "发现王国儿童票"
+          }, {
+            "title": "发现王国特惠票"
+          }]
+      }
+    },
+    {
+      "id": "0005",
+      "spot": {
+        "sightName": "大连金石滩(AAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+        "categoryList": [{
+            "title": "金石滩成人票",
+            "children": [{
+              "title": "成人三馆联票",
+              "children": [{
+                "title": "成人三馆联票 - 某一连锁店销售"
+              }]
+            },{
+              "title": "成人五馆联票"
+            }]
+          }, {
+            "title": "金石滩学生票"
+          }, {
+            "title": "金石滩儿童票"
+          }, {
+            "title": "金石滩特惠票"
+          }]
+      }
+    }
+  ]
+}
