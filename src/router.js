@@ -1,18 +1,34 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import pageA from './pages/a.vue'
-import pageB from './pages/b.vue'
+import Home from './pages/home/Home.vue'
+import City from './pages/city/City.vue'
+import pageA from './pages/home/childHome/a.vue'
+import pageB from './pages/home/childHome/b.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/pagea',
-        component: pageA
+        path: '/',
+        redirect: '/home'
     },
     {
-        path: '/pageb',
-        component: pageB
+        path: '/home',
+        component: Home,
+        children: [
+            {
+                path: 'pagea',
+                component: pageA
+            },
+            {
+                path: 'pageb',
+                component: pageB
+            }
+        ]
+    },
+    {
+        path: '/city',
+        component: City
     }
 ]
 

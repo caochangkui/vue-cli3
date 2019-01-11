@@ -1,11 +1,13 @@
 <template>
   <div class="page">
-      page  a {{count}}
+      this is page  a
+        <br>
+      {{count}}
   </div>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState([
