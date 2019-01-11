@@ -5,6 +5,12 @@ Vue.use(Vuex)
 
 let defaultCity = '北京'
 
+try {
+    if (localStorage.city) {
+      defaultCity = localStorage.city
+    }
+  } catch (e) {e}
+
 const state = {
     count: 1,
     city: defaultCity
@@ -16,6 +22,12 @@ const mutations = {
     },
     decrement (state) {
         state.count --
+    },
+    changeCity (state, city) {
+        state.city = city
+        try {
+          localStorage.city = city
+        } catch (e) {e}
     }
 }
 
