@@ -1,6 +1,6 @@
 <template>
-  <div id="city">
-      city city
+  <div id=" ">
+      公共组件 A
   </div>
 </template>
 

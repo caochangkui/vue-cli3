@@ -14,21 +14,29 @@ const routes = [
     },
     {
         path: '/home',
+        name: 'Home',
         component: Home,
+        meta: {title: '首页',keyword: '兄弟组件、自定义组件',description: '兄弟组件传值，自定义组件'},
         children: [
             {
                 path: 'pagea',
-                component: pageA
+                name: 'pagea',
+                component: pageA,
+                meta: {title: 'pageA'}
             },
             {
                 path: 'pageb',
-                component: pageB
+                name: 'pageb',
+                component: pageB,
+                meta: {title: 'pageB'}
             }
         ]
     },
     {
         path: '/city',
-        component: City
+        name: 'City',
+        component: City,
+        meta: {title: '城市列表'}
     }
 ]
 
