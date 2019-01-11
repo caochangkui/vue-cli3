@@ -1,4 +1,4 @@
-# hello-world
+# vue-cli3 demo
 
 ## Project setup
 ```
