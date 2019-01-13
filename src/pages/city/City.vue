@@ -7,6 +7,10 @@
       :hot="hotCities"
       :letter="letter"
     ></city-list>
+    <city-alphabet
+      :cities="cities"
+      @change="handleLetterChange"
+    ></city-alphabet>
   </div>
 </template>
 
@@ -39,6 +43,10 @@ export default {
         this.cities = data.cities
         this.hotCities = data.hotCities
       }
+    },
+    handleLetterChange (letter) {
+      console.log(letter)
+      this.letter = letter
     }
   },
   mounted () {

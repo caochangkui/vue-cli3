@@ -62,6 +62,16 @@ export default {
       currentCity: 'city'
     })
   },
+  watch: {
+    // 监听 Alphabet 中传过来的letter，如有变化，则滚动区域自动滚动到对应元素上
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0] // 获取对应字母的ref
+        this.scroll.scrollToElement(element) // 利用better-scroll插件 滚动到指定元素element
+        console.log(element)
+      }
+    }
+  },
   methods: {
     handleCityClick (city) {
       console.log(city)
