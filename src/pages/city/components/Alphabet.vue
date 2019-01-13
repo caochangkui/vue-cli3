@@ -1,15 +1,20 @@
 <template>
-  <ul class="list">
-    <li class="item"
-      v-for="item of letters"
-      :key="item"
-      :ref="item"
-      @touchstart="handleTouchStart"
-      @touchmove="handleTouchMove"
-      @touchend="handleTouchEnd"
-      @click="handleLetterClick"
-    >{{item}}</li>
-  </ul>
+  <div class="list-wrapper">
+    <div class="word">
+      <span>A</span>
+    </div>
+    <ul class="list">
+      <li class="item"
+        v-for="item of letters"
+        :key="item"
+        :ref="item"
+        @touchstart="handleTouchStart"
+        @touchmove="handleTouchMove"
+        @touchend="handleTouchEnd"
+        @click="handleLetterClick"
+      >{{item}}</li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -92,6 +97,28 @@ export default {
     font-size: 14px;
     text-align: center;
     width: 100%;
+  }
+  .word {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+  .word span {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 </style>
