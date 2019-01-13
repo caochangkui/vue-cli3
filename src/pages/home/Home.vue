@@ -1,7 +1,11 @@
 <template>
   <div class="home">
-    <HelloWorld msg="@vue/cli" @patch="fun"/>
+    <br>
+    <router-link to='/city'>
+      当前城市：{{this.city}} >>
+    </router-link>
     <hr>
+    <HelloWorld msg="@vue/cli" @patch="fun"/>
     <hr>
     <Vuexx></Vuexx>
     <hr>
@@ -23,6 +27,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import HelloWorld from "./components/HelloWorld.vue";
 import Vuexx from "./components/vuex.vue";
 import "./components/custom.js"; // 引入自定义指令文件
@@ -35,6 +40,12 @@ export default {
   },
   data() {
     return {};
+  },
+  computed: {
+    ...mapState({
+      city: 'city'
+    })
+    // ...mapState(['city'])
   },
   methods: {
     /* eslint-disable */

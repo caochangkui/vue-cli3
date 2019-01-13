@@ -73,13 +73,13 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['changeCity']),
     handleCityClick (city) {
       console.log(city)
       // this.$store.commit('changeCity', city) // 将参数city传给vuex中的mutations中的changeCity函数
       this.changeCity(city)
-      // this.$router.push('/') // 页面跳转 参考
-    },
-    ...mapMutations(['changeCity'])
+      this.$router.push('/') // 页面跳转 参考
+    }
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper, {
