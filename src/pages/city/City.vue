@@ -1,6 +1,9 @@
 <template>
   <div id="city">
     <!-- <img src="/logo.png" alt="" height="10px"> -->
+    <div class="word" v-show="showWord">
+      <span>{{letter}}</span>
+    </div>
     <div class="title">城市选择</div>
     <city-list
       :cities="cities"
@@ -26,6 +29,7 @@ export default {
   },
   data () {
     return {
+      showWord: false,
       cities: {},
       hotCities: [],
       letter: ''
@@ -47,6 +51,11 @@ export default {
     handleLetterChange (letter) {
       console.log(letter)
       this.letter = letter
+      this.showWord = true
+      setTimeout(() => {
+        this.showWord = false
+        console.log(this.showWord)
+      }, 500)
     }
   },
   mounted () {
@@ -60,5 +69,27 @@ export default {
   line-height: 40px;
   background: #10d1eb;
   color: #fff;
+}
+.word {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.word span {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background: rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
